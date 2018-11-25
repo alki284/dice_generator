@@ -1,0 +1,11 @@
+from random import randint
+
+roll_again = True
+
+while roll_again:
+    number_of_sides = int(input("How many sides would you like your dice to have?: "))
+    result = randint(1, number_of_sides)
+    print(result)
+    option_to_roll = input("Would you like to roll again? Y or N: ")
+    roll_again == ("Y" or "Yes" or "YES" or "yes") in input().lower()
+    
